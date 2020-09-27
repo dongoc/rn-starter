@@ -9,6 +9,10 @@
 // SECTION part1 **IMPORT** libraries we need to create a component
 import React from 'react' // how different components work together
 import { Text, StyleSheet } from 'react-native' // show screen
+// NOTE : 'Text' is a 'primitive React' element.
+// used to show some basic content on the screen
+// NOTE : primitive element
+// - Text
 
 // SECTION part2 create a **component** (a function that returns some 'JSX(what we would show on screen)')
 const ComponentsScreen = () => {
