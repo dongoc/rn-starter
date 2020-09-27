@@ -28,6 +28,8 @@ const ComponentsScreen = () => {
 ### Rules of JSX
 - We can **assemble** different JSX elements like normal HTML
 ```js
+import { Text, StyleSheet, view } from 'react-native' // show screen
+
 const ComponentsScreen = () => {
   return (
     <View>
