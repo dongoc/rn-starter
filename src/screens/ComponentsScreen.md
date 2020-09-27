@@ -25,6 +25,43 @@ const ComponentsScreen = () => {
 };
 ```
 
+### Rules of JSX
+- We can **assemble** different JSX elements like normal HTML
+```js
+const ComponentsScreen = () => {
+  return (
+    <View>
+      <Text style={styles.textStyle}>this is the origin</Text>
+      <Text>Hi there!</Text>
+    </View>
+  );
+};
+```
+- We **configure** different JSX elements using 'props'
+```js
+return <Text style={styles.textStyle}>this style prop!</Text>
+
+```
+- We can **refer to JS variables** inside of JSX block by using curly braces
+```js
+const ComponentsScreen = () => {
+  const greeting = 'Bye There!'
+  const array = [123, 456]
+  // object는 적용되지 않음
+  return (
+    <Text>{greeting}</Text>
+    <Text>{array}</Text> //123456으로 표시됨
+  );
+};
+```
+- We can **assign JSX elements to a variable**, then show that variable inside of a JSX block
+```js
+const ComponentsScreen = () => {
+  const greeting = <Text>'Bye There!'</Text>
+  return {greeting}
+};
+```
+
 <hr>
 
 ## Part3 : create a **stylesheet** to style our component
@@ -50,3 +87,7 @@ const ComponentsScreen = () => {
 ```js
 export default ComponentsScreen;
 ```
+
+
+
+
